@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  gather_facts: no
+  vars:
+    vcenter_server: 
+    vcenter_user: 
+    vcenter_pass: 
+    datacenter_name: 
+    cluster_name: 
+
+  tasks: 
+    - name: Remove 
+      vmware_guest:
+        hostname: 
+        username:
+        password: 
+        validate_certs: no
+        cluster: 
+        name: 
+        state: absent
+      delegate_to: localhost
+      register: facts  
